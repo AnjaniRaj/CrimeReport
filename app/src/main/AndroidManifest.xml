@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pc.crimereport">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Initialiser">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="My Reports"
+            android:parentActivityName=".Initialiser">
+
+        </activity>
+        <activity
+            android:name=".New_Report"
+            android:label="Enter Info"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Admin"
+            android:label="Admin"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Admin_Area"
+            android:label="Admin Area"
+            android:parentActivityName=".Admin" />
+        <activity
+            android:name=".AReport"
+            android:label="Report Detail"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".new_admin_report"
+            android:label="Report Detail"
+            android:parentActivityName=".Admin_Area" />
+        <activity
+            android:name=".PoliceInfo"
+            android:label="Police Info"
+            android:parentActivityName=".new_admin_report" />
+        <activity
+            android:name=".ComplainerInfo"
+            android:label="Complainer Info"
+            android:parentActivityName=".new_admin_report" />
+        <activity
+            android:name=".Police_station"
+            android:label="Police station"
+            android:parentActivityName=".new_admin_report" />
+
+
+    </application>
+
+</manifest>

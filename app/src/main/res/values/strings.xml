@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Crime Report</string>
+    <string name="enter">Enter 4 digit PIN:</string>
+</resources>
